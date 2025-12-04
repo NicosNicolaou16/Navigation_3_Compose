@@ -12,6 +12,7 @@ import com.nicos.navigation_3_compose.navigation.Navigation
 import com.nicos.navigation_3_compose.navigation.screen_routes.ScreenA
 import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navigator
 import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.navigationState
+import com.nicos.navigation_3_compose.screens.MainBottomNavigationView
 import com.nicos.navigation_3_compose.ui.theme.Navigation_3_ComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -24,8 +25,19 @@ class MainActivity : ComponentActivity() {
             val navigator = remember { Navigator(navigationState) }
 
             Navigation_3_ComposeTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Navigation()
+                Scaffold(
+                    modifier = Modifier.fillMaxSize(),
+
+                    bottomBar = {
+                        MainBottomNavigationView(
+                            navigator = navigator,
+                            currentRoute = navigator.state.stacksInUse.lastOrNull().toString(),
+                        )
+                    }) { innerPadding ->
+                    Navigation(
+                        navigator = navigator,
+                        navigationState = navigationState
+                    )
                 }
             }
         }

@@ -10,7 +10,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.sp
-import androidx.navigation3.runtime.NavKey
 import com.nicos.navigation_3_compose.navigation.screen_routes.TopLevelRoute.Companion.screenARoot
 import com.nicos.navigation_3_compose.navigation.screen_routes.TopLevelRoute.Companion.screenBRoot
 import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navigator
@@ -22,7 +21,6 @@ import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navi
 fun MainBottomNavigationView(
     navigator: Navigator,
     currentRoute: String?,
-    preselectedRoute: NavKey? = null
 ) {
     val items = mutableListOf(
         screenARoot,
@@ -57,7 +55,7 @@ fun MainBottomNavigationView(
                 alwaysShowLabel = true,
                 selected = currentRoute == item.route.toString(),
                 onClick = {
-                    navigator.navigateToBottomNavItem(preselectedRoute ?: item.route)
+                    navigator.navigateToBottomNavItem(item.route)
                 }
             )
         }
