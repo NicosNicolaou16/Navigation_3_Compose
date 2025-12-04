@@ -2,6 +2,7 @@ package com.nicos.navigation_3_compose.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation3.runtime.NavEntry
+import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.ui.NavDisplay
 import com.nicos.navigation_3_compose.navigation.screen_routes.ScreenA
 import com.nicos.navigation_3_compose.navigation.screen_routes.ScreenB
@@ -24,8 +25,9 @@ fun Navigation(
         onBack = {
             navigator.goBack()
         },
-        entryProvider = { key ->
-            // Way with the when() {} (without entryProvider {})
+        entryProvider = entryProvider { /*key ->
+
+            // Using NavEntry
             when (key) {
                 /// Bottom Navigation View
                 is ScreenA -> NavEntry(key) {
@@ -54,11 +56,11 @@ fun Navigation(
                 }
 
                 else -> error("no route found for $key")
-            }
+            }*/
 
-            // Way with entryProvider {}
-            /*entry<ScreenA> {
-                ScreenA(navigateToScreenC =  {  id ->
+            // entryProvider DSL
+            entry<ScreenA> {
+                ScreenARoot(navigateToScreenC =  {  id ->
                     navigator.navigate(ScreenC(id = id))
                 })
             }
@@ -72,7 +74,7 @@ fun Navigation(
             }
             entry<ScreenD> {
                 ScreenDRoot()
-            }*/
+            }
         }
     )
 }
