@@ -43,7 +43,7 @@ fun Navigation(
                     ScreenD(navigator)
                 }
 
-                else -> error("")
+                else -> error("no route found for $key")
             }*/
 
             // Way with entryProvider {}
