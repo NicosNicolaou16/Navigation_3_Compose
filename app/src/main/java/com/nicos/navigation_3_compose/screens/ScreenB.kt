@@ -34,9 +34,6 @@ fun ScreenB(navigator: Navigator) {
                     .wrapContentSize(Alignment.Center)
             )
             Button(
-                modifier = Modifier
-                    .align(Alignment.CenterHorizontally)
-                    .padding(16.dp),
                 onClick = {
                     navigator.navigate(ScreenD)
                 }) {
