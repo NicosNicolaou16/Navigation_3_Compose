@@ -14,7 +14,6 @@ import com.nicos.navigation_3_compose.screens.ScreenA
 import com.nicos.navigation_3_compose.screens.ScreenB
 import com.nicos.navigation_3_compose.screens.ScreenC
 import com.nicos.navigation_3_compose.screens.ScreenD
-import java.util.Map.entry
 
 @Composable
 fun Navigation(
