@@ -1,5 +1,6 @@
 package com.nicos.navigation_3_compose.screens
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.wrapContentSize
@@ -20,6 +21,9 @@ fun ScreenCRoot(
             style = MaterialTheme.typography.titleLarge,
             modifier = Modifier
                 .fillMaxSize()
+                .background(
+                    color = MaterialTheme.colorScheme.onError
+                )
                 .padding(paddingValues)
                 .wrapContentSize(Alignment.Center)
         )

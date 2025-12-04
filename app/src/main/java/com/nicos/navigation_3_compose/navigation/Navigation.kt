@@ -1,5 +1,11 @@
 package com.nicos.navigation_3_compose.navigation
 
+import androidx.compose.animation.EnterTransition
+import androidx.compose.animation.ExitTransition
+import androidx.compose.animation.core.tween
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.togetherWith
 import androidx.compose.runtime.Composable
 import androidx.navigation3.runtime.NavEntry
 import androidx.navigation3.runtime.entryProvider
@@ -69,7 +75,29 @@ fun Navigation(
                     navigator.navigate(ScreenD)
                 })
             }
-            entry<ScreenC> {
+            entry<ScreenC>(
+                metadata = NavDisplay.transitionSpec {
+                    // Slide new content right, keeping the old content in place underneath
+                    slideInHorizontally(
+                        initialOffsetX = { it },
+                        animationSpec = tween(1000)
+                    ) togetherWith ExitTransition.KeepUntilTransitionsFinished
+                } + NavDisplay.popTransitionSpec {
+                    // Slide old content right, revealing the new content in place underneath
+                    EnterTransition.None togetherWith
+                            slideOutHorizontally(
+                                targetOffsetX = { it },
+                                animationSpec = tween(1000)
+                            )
+                } + NavDisplay.predictivePopTransitionSpec {
+                    // Slide old content right, revealing the new content in place underneath
+                    EnterTransition.None togetherWith
+                            slideOutHorizontally(
+                                targetOffsetX = { it },
+                                animationSpec = tween(1000)
+                            )
+                }
+            ) {
                 ScreenCRoot(id = it.id)
             }
             entry<ScreenD> {
