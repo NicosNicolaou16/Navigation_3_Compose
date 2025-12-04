@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import com.nicos.navigation_3_compose.navigation.screen_routes.ScreenC
 import com.nicos.navigation_3_compose.navigation.screen_routes.ScreenD
 import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navigator
@@ -18,18 +19,27 @@ import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navi
 @Composable
 fun ScreenB(navigator: Navigator) {
     Scaffold { paddingValues ->
-        Column {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp)
+                .wrapContentSize(Alignment.Center)
+        ) {
             Text(
                 text = "Screen B",
                 style = MaterialTheme.typography.titleLarge,
                 modifier = Modifier
-                    .fillMaxSize()
+                    .align(Alignment.CenterHorizontally)
                     .padding(paddingValues)
                     .wrapContentSize(Alignment.Center)
             )
-            Button(onClick = {
-                navigator.navigate(ScreenD)
-            }) {
+            Button(
+                modifier = Modifier
+                    .align(Alignment.CenterHorizontally)
+                    .padding(16.dp),
+                onClick = {
+                    navigator.navigate(ScreenD)
+                }) {
                 Text(text = "Navigate to Screen D")
             }
         }

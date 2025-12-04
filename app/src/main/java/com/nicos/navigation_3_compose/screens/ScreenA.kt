@@ -11,18 +11,24 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
 import com.nicos.navigation_3_compose.navigation.screen_routes.ScreenC
 import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navigator
 
 @Composable
 fun ScreenA(navigator: Navigator) {
     Scaffold { paddingValues ->
-        Column {
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(16.dp)
+                .wrapContentSize(Alignment.Center)
+        ) {
             Text(
                 text = "Screen A",
                 style = MaterialTheme.typography.titleLarge,
                 modifier = Modifier
-                    .fillMaxSize()
+                    .align(Alignment.CenterHorizontally)
                     .padding(paddingValues)
                     .wrapContentSize(Alignment.Center)
             )
