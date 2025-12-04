@@ -14,9 +14,6 @@ import com.nicos.navigation_3_compose.navigation.screen_routes.TopLevelRoute.Com
 import com.nicos.navigation_3_compose.navigation.screen_routes.TopLevelRoute.Companion.screenBRoot
 import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navigator
 
-/**
- * Reference: https://medium.com/geekculture/bottom-navigation-in-jetpack-compose-android-9cd232a8b16
- * */
 @Composable
 fun MainBottomNavigationView(
     navigator: Navigator,
