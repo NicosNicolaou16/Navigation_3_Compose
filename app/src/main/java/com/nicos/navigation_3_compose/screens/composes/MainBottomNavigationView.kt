@@ -1,4 +1,4 @@
-package com.nicos.navigation_3_compose.screens
+package com.nicos.navigation_3_compose.screens.composes
 
 import androidx.compose.material3.Icon
 import androidx.compose.material3.NavigationBar
