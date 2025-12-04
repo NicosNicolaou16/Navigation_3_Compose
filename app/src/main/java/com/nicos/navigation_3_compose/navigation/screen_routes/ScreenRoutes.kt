@@ -10,7 +10,7 @@ data object ScreenA : NavKey
 data object ScreenB : NavKey
 
 @Serializable
-data object ScreenC : NavKey
+data class ScreenC(val id: Int) : NavKey
 
 @Serializable
 data object ScreenD : NavKey
