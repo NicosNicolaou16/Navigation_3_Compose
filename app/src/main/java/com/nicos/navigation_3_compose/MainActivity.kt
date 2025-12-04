@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.nicos.navigation_3_compose.navigation.Navigation
 import com.nicos.navigation_3_compose.screens.ScreenA
 import com.nicos.navigation_3_compose.ui.theme.Navigation_3_ComposeTheme
 
@@ -21,7 +22,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Navigation_3_ComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    ScreenA()
+                    Navigation()
                 }
             }
         }
