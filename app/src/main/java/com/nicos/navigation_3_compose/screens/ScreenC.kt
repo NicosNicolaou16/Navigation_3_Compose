@@ -12,7 +12,10 @@ import androidx.compose.ui.Modifier
 import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navigator
 
 @Composable
-fun ScreenC(navigator: Navigator) {
+fun ScreenC(
+    navigator: Navigator,
+    id: Int
+) {
     Scaffold { paddingValues ->
         Text(
             text = "Screen C",
