@@ -20,8 +20,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            // this is the state of the navigation
             val navigationState = ScreenA.navigationState()
 
+            // this is the navigator
             val navigator = remember { Navigator(navigationState) }
 
             Navigation_3_ComposeTheme {
