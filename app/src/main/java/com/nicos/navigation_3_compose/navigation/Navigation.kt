@@ -54,7 +54,7 @@ fun Navigation(
                 ScreenB(navigator)
             }
             entry<ScreenC> {
-                ScreenC(navigator)
+                ScreenC(navigator, id = it.id)
             }
             entry<ScreenD> {
                 ScreenD(navigator)
