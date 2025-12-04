@@ -38,7 +38,8 @@ class MainActivity : ComponentActivity() {
                     }) { innerPadding ->
                     Navigation(
                         navigator = navigator,
-                        navigationState = navigationState
+                        navigationState = navigationState,
+                        paddingValues = innerPadding
                     )
                 }
             }

@@ -4,8 +4,11 @@ import androidx.compose.animation.EnterTransition
 import androidx.compose.animation.ExitTransition
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.togetherWith
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.runtime.Composable
 import androidx.navigation3.runtime.NavEntry
 import androidx.navigation3.runtime.entryProvider
@@ -25,6 +28,7 @@ import com.nicos.navigation_3_compose.screens.ScreenDRoot
 fun Navigation(
     navigator: Navigator,
     navigationState: NavigationState,
+    paddingValues: PaddingValues,
 ) {
     NavDisplay(
         backStack = navigationState.stacksInUse,
@@ -66,7 +70,7 @@ fun Navigation(
 
             // entryProvider DSL
             entry<ScreenA> {
-                ScreenARoot(navigateToScreenC =  {  id ->
+                ScreenARoot(navigateToScreenC = { id ->
                     navigator.navigate(ScreenC(id = id))
                 })
             }
@@ -76,6 +80,7 @@ fun Navigation(
                 })
             }
             entry<ScreenC>(
+                // Apply only to ScreenC
                 metadata = NavDisplay.transitionSpec {
                     // Slide new content right, keeping the old content in place underneath
                     slideInHorizontally(
@@ -103,6 +108,25 @@ fun Navigation(
             entry<ScreenD> {
                 ScreenDRoot()
             }
-        }
+        },
+        // Apply to all screens
+        transitionSpec = {
+            slideInVertically(
+                initialOffsetY = { it },
+                animationSpec = tween(1000)
+            ) togetherWith ExitTransition.KeepUntilTransitionsFinished
+        },
+        popTransitionSpec = {
+            EnterTransition.None togetherWith slideOutVertically(
+                targetOffsetY = { it },
+                animationSpec = tween(1000)
+            )
+        },
+        predictivePopTransitionSpec = {
+            EnterTransition.None togetherWith slideOutVertically(
+                targetOffsetY = { it },
+                animationSpec = tween(1000)
+            )
+        },
     )
 }
