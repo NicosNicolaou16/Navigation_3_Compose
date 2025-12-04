@@ -1,7 +1,6 @@
 package com.nicos.navigation_3_compose.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.navigation3.runtime.NavEntry
 import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.ui.NavDisplay
 import com.nicos.navigation_3_compose.navigation.screen_routes.ScreenA
