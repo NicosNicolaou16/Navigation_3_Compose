@@ -14,7 +14,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun ScreenA(navigateToScreenC: (Int) -> Unit) {
+fun ScreenARoot(navigateToScreenC: (Int) -> Unit) {
     Scaffold { paddingValues ->
         Column(
             modifier = Modifier
