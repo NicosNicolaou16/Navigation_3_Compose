@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.nicos.navigation_3_compose.screens.ScreenA
 import com.nicos.navigation_3_compose.ui.theme.Navigation_3_ComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,28 +21,9 @@ class MainActivity : ComponentActivity() {
         setContent {
             Navigation_3_ComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    ScreenA()
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Navigation_3_ComposeTheme {
-        Greeting("Android")
     }
 }
