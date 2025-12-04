@@ -25,6 +25,7 @@ fun Navigation(
             navigator.goBack()
         },
         entryProvider = entryProvider { /*key ->
+        // Way with the when() {} (without entryProvider {})
             when (key) {
                 is ScreenA -> NavEntry(key) {
                     ScreenA(navigator)
@@ -45,6 +46,7 @@ fun Navigation(
                 else -> error("")
             }*/
 
+            // Way with entryProvider {}
             entry<ScreenA> {
                 ScreenA(navigator)
             }
