@@ -33,7 +33,7 @@ fun ScreenA(navigator: Navigator) {
                     .wrapContentSize(Alignment.Center)
             )
             Button(onClick = {
-                navigator.navigate(ScreenC)
+                navigator.navigate(ScreenC(id = 1))
             }) {
                 Text(text = "Navigate to Screen C")
             }
