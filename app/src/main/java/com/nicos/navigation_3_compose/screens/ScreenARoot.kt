@@ -12,12 +12,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.nicos.navigation_3_compose.navigation.screen_routes.ScreenC
-import com.nicos.navigation_3_compose.navigation.screen_routes.ScreenD
-import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navigator
 
 @Composable
-fun ScreenB(navigator: Navigator) {
+fun ScreenA(navigateToScreenC: (Int) -> Unit) {
     Scaffold { paddingValues ->
         Column(
             modifier = Modifier
@@ -26,18 +23,17 @@ fun ScreenB(navigator: Navigator) {
                 .wrapContentSize(Alignment.Center)
         ) {
             Text(
-                text = "Screen B",
+                text = "Screen A",
                 style = MaterialTheme.typography.titleLarge,
                 modifier = Modifier
                     .align(Alignment.CenterHorizontally)
                     .padding(paddingValues)
                     .wrapContentSize(Alignment.Center)
             )
-            Button(
-                onClick = {
-                    navigator.navigate(ScreenD)
-                }) {
-                Text(text = "Navigate to Screen D")
+            Button(onClick = {
+                navigateToScreenC(1)
+            }) {
+                Text(text = "Navigate to Screen C")
             }
         }
     }

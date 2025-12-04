@@ -9,16 +9,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navigator
 
 @Composable
-fun ScreenC(
-    navigator: Navigator,
-    id: Int
-) {
+fun ScreenDRoot() {
     Scaffold { paddingValues ->
         Text(
-            text = "Screen C",
+            text = "Screen D",
             style = MaterialTheme.typography.titleLarge,
             modifier = Modifier
                 .fillMaxSize()

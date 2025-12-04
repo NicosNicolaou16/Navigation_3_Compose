@@ -1,6 +1,7 @@
 package com.nicos.navigation_3_compose.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.navigation3.runtime.NavEntry
 import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.ui.NavDisplay
 import com.nicos.navigation_3_compose.navigation.screen_routes.ScreenA
@@ -11,8 +12,9 @@ import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navi
 import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navigator
 import com.nicos.navigation_3_compose.screens.ScreenA
 import com.nicos.navigation_3_compose.screens.ScreenB
-import com.nicos.navigation_3_compose.screens.ScreenC
+import com.nicos.navigation_3_compose.screens.ScreenCRoot
 import com.nicos.navigation_3_compose.screens.ScreenD
+import com.nicos.navigation_3_compose.screens.ScreenDRoot
 
 @Composable
 fun Navigation(
@@ -25,29 +27,39 @@ fun Navigation(
             navigator.goBack()
         },
         entryProvider = entryProvider { /*key ->
-        // Way with the when() {} (without entryProvider {})
+            // Way with the when() {} (without entryProvider {})
             when (key) {
+                /// Bottom Navigation View
                 is ScreenA -> NavEntry(key) {
-                    ScreenA(navigator)
+                    ScreenA(
+                        navigateToScreenC = { id ->
+                            navigator.navigate(ScreenC(id = id))
+                        },
+                    )
                 }
 
+                /// Bottom Navigation View
                 is ScreenB -> NavEntry(key) {
-                    ScreenB(navigator)
+                    ScreenB(
+                        navigateToScreenD = {
+                            navigator.navigate(ScreenD)
+                        },
+                    )
                 }
 
                 is ScreenC -> NavEntry(key) {
-                    ScreenC(navigator, id = it.id)
+                    ScreenCRoot(id = key.id)
                 }
 
                 is ScreenD -> NavEntry(key) {
-                    ScreenD(navigator)
+                    ScreenDRoot()
                 }
 
                 else -> error("no route found for $key")
             }*/
 
             // Way with entryProvider {}
-            entry<ScreenA> {
+            /*entry<ScreenA> {
                 ScreenA(navigator)
             }
             entry<ScreenB> {
@@ -58,7 +70,7 @@ fun Navigation(
             }
             entry<ScreenD> {
                 ScreenD(navigator)
-            }
+            }*/
         }
     )
 }
