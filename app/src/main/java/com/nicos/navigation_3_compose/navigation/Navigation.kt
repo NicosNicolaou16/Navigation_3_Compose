@@ -12,6 +12,7 @@ import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.material3.adaptive.ExperimentalMaterial3AdaptiveApi
+import androidx.compose.material3.adaptive.navigation3.ListDetailSceneStrategy
 import androidx.compose.material3.adaptive.navigation3.rememberListDetailSceneStrategy
 import androidx.compose.runtime.Composable
 import androidx.navigation3.runtime.NavEntry
@@ -77,7 +78,9 @@ fun Navigation(
             }*/
 
             // entryProvider DSL
-            entry<ScreenA> {
+            entry<ScreenA>(
+                metadata = ListDetailSceneStrategy.listPane()
+            ) {
                 ScreenARoot(navigateToScreenC = { id ->
                     navigator.navigate(ScreenC(id = id))
                 })
@@ -109,7 +112,7 @@ fun Navigation(
                                 targetOffsetX = { it },
                                 animationSpec = tween(1000)
                             )
-                }
+                } + ListDetailSceneStrategy.detailPane()
             ) {
                 ScreenCRoot(id = it.id)
             }
