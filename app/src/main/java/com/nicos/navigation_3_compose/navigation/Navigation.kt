@@ -43,7 +43,7 @@ fun Navigation(
         onBack = {
             navigator.goBack()
         },
-        sceneStrategy = sceneStrategy,
+        sceneStrategy = sceneStrategy, // add the rememberListDetailSceneStrategy here
         entryProvider = entryProvider { /*key ->
 
             // Using NavEntry
