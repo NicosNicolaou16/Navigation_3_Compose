@@ -79,6 +79,7 @@ fun Navigation(
 
             // entryProvider DSL
             entry<ScreenA>(
+                // For Adaptive Navigation
                 metadata = ListDetailSceneStrategy.listPane()
             ) {
                 ScreenARoot(navigateToScreenC = { id ->
@@ -112,7 +113,7 @@ fun Navigation(
                                 targetOffsetX = { it },
                                 animationSpec = tween(1000)
                             )
-                } + ListDetailSceneStrategy.detailPane()
+                } + ListDetailSceneStrategy.detailPane() // For Adaptive Navigation
             ) {
                 ScreenCRoot(id = it.id)
             }
