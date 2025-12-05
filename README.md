@@ -27,8 +27,8 @@ Compose. The project includes:
 # Versioning
 
 KSP version: 2.2.20-2.0.3 <br />
-Room version: 2.8.0 <br />
+Navigation 3 version: 1.0.0 <br />
 Target SDK version: 36 <br />
 Minimum SDK version: 29 <br />
-Kotlin version: 2.2.20 <br />
-Gradle version: 8.13.0 <br />
+Kotlin version: 2.2.21 <br />
+Gradle version: 8.13.1 <br />
