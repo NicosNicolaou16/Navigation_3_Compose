@@ -37,4 +37,3 @@ Gradle version: 8.13.1 <br />
 - https://youtu.be/6L6GfvlmKj8?si=QFvKUxKXNmpY2oY9
 - https://android-developers.googleblog.com/2025/11/jetpack-navigation-3-is-stable.html
 - https://developer.android.com/guide/navigation/navigation-3
-- https://youtu.be/6L6GfvlmKj8?si=pIwDEYJaXVYOfvAG
