@@ -21,13 +21,17 @@ Compose. The project includes:
 
 ---
 
-## 📊 Navigation Example
+# Navigation Example
 
 ### Bottom Navigation View -> ScreenA and ScreenB
 
 ### ScreenA -> ScreenC
 
 ### ScreenB -> ScreenD
+
+---
+
+# Examples
 
 ---
 
