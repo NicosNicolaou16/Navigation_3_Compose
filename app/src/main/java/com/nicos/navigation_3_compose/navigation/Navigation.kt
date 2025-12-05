@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalMaterial3AdaptiveApi::class)
+
 package com.nicos.navigation_3_compose.navigation
 
 import androidx.compose.animation.EnterTransition
@@ -9,8 +11,11 @@ import androidx.compose.animation.slideOutHorizontally
 import androidx.compose.animation.slideOutVertically
 import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.layout.PaddingValues
+import androidx.compose.material3.adaptive.ExperimentalMaterial3AdaptiveApi
+import androidx.compose.material3.adaptive.navigation3.rememberListDetailSceneStrategy
 import androidx.compose.runtime.Composable
 import androidx.navigation3.runtime.NavEntry
+import androidx.navigation3.runtime.NavKey
 import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.ui.NavDisplay
 import com.nicos.navigation_3_compose.navigation.screen_routes.ScreenA
@@ -30,11 +35,14 @@ fun Navigation(
     navigationState: NavigationState,
     paddingValues: PaddingValues,
 ) {
+    val sceneStrategy = rememberListDetailSceneStrategy<NavKey>()
+
     NavDisplay(
         backStack = navigationState.stacksInUse,
         onBack = {
             navigator.goBack()
         },
+        sceneStrategy = sceneStrategy,
         entryProvider = entryProvider { /*key ->
 
             // Using NavEntry
