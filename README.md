@@ -19,6 +19,18 @@ Compose. The project includes:
 - Screen transition animations, including global and per-screen configurations.
 - Adaptive navigation support for different screen sizes and layouts.
 
+---
+
+## 📊 Navigation Example
+
+### Bottom Navigation View -> ScreenA and ScreenB
+
+### ScreenA -> ScreenC
+
+### ScreenB -> ScreenD
+
+---
+
 > [!IMPORTANT]  
 > Check my article for the setup :point_right: [ - Medium]() :point_left: <br />
 
@@ -31,6 +43,8 @@ Target SDK version: 36 <br />
 Minimum SDK version: 29 <br />
 Kotlin version: 2.2.21 <br />
 Gradle version: 8.13.1 <br />
+
+---
 
 # References
 
