@@ -26,7 +26,6 @@ Compose. The project includes:
 
 # Versioning
 
-KSP version: 2.2.20-2.0.3 <br />
 Navigation 3 version: 1.0.0 <br />
 Target SDK version: 36 <br />
 Minimum SDK version: 29 <br />
