@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Navigation_3_Compose</string>
+    <string name="screen_a">Screen A</string>
+    <string name="screen_b">Screen B</string>
 </resources>

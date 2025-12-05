@@ -5,12 +5,14 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
+import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import com.nicos.navigation_3_compose.navigation.Navigation
+import com.nicos.navigation_3_compose.navigation.screen_routes.ScreenA
+import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.Navigator
+import com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3.navigationState
+import com.nicos.navigation_3_compose.screens.composes.MainBottomNavigationView
 import com.nicos.navigation_3_compose.ui.theme.Navigation_3_ComposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,30 +20,29 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
+            // this is the state of the navigation
+            val navigationState = ScreenA.navigationState()
+
+            // this is the navigator
+            val navigator = remember { Navigator(navigationState) }
+
             Navigation_3_ComposeTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                Scaffold(
+                    modifier = Modifier.fillMaxSize(),
+
+                    bottomBar = {
+                        MainBottomNavigationView(
+                            navigator = navigator,
+                            currentRoute = navigator.state.stacksInUse.lastOrNull().toString(),
+                        )
+                    }) { innerPadding ->
+                    Navigation(
+                        navigator = navigator,
+                        navigationState = navigationState,
+                        paddingValues = innerPadding
                     )
                 }
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    Navigation_3_ComposeTheme {
-        Greeting("Android")
     }
 }
