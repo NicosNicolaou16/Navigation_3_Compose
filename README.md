@@ -18,3 +18,17 @@ Compose. The project includes:
 - Navigation integration with a Bottom Navigation bar.
 - Screen transition animations, including global and per-screen configurations.
 - Adaptive navigation support for different screen sizes and layouts.
+
+> [!IMPORTANT]  
+> Check my article for the setup :point_right: [ - Medium]() :point_left: <br />
+
+---
+
+# Versioning
+
+KSP version: 2.2.20-2.0.3 <br />
+Room version: 2.8.0 <br />
+Target SDK version: 36 <br />
+Minimum SDK version: 29 <br />
+Kotlin version: 2.2.20 <br />
+Gradle version: 8.13.0 <br />
