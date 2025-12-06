@@ -23,16 +23,6 @@ Compose. The project includes:
 
 # Navigation Example
 
-#### Bottom Navigation View -> ScreenA and ScreenB
-
-#### ScreenA -> ScreenC
-
-#### ScreenB -> ScreenD
-
----
-
-# Navigation Example
-
 This example demonstrates the following navigation paths:
 
 - **Bottom Navigation**:
