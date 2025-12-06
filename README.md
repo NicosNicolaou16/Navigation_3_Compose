@@ -23,11 +23,11 @@ Compose. The project includes:
 
 # Navigation Example
 
-### Bottom Navigation View -> ScreenA and ScreenB
+#### Bottom Navigation View -> ScreenA and ScreenB
 
-### ScreenA -> ScreenC
+#### ScreenA -> ScreenC
 
-### ScreenB -> ScreenD
+#### ScreenB -> ScreenD
 
 ---
 
