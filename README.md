@@ -34,10 +34,10 @@ This example demonstrates the following navigation paths:
 
 # Examples
 
-|                     Example 1 - Navigation 3                      |                    Example 2 - Navigation 3                    |
-|:-----------------------------------------------------------------:|:--------------------------------------------------------------:|
-| <img src="examples/navigation_without_animation.gif" width="200"> | <img src="examples/navigation_with_animation.gif" width="200"> |
-|                  *Navigation without Animation.*                  |                  *Navigation with Animation.*                  |
+|                     Example 1 - Navigation 3                      |                    Example 2 - Navigation 3                    |                         Example 3 - Navigation 3                          |
+|:-----------------------------------------------------------------:|:--------------------------------------------------------------:|:-------------------------------------------------------------------------:|
+| <img src="examples/navigation_without_animation.gif" width="200"> | <img src="examples/navigation_with_animation.gif" width="200"> | <img src="examples/navigation_supports_adaptive_screens.gif" width="200"> |
+|                  *Navigation without Animation.*                  |                  *Navigation with Animation.*                  |                  *Navigation supports Adaptive Screens.*                  |
 
 ---
 
