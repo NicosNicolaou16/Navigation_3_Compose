@@ -34,6 +34,11 @@ This example demonstrates the following navigation paths:
 
 # Examples
 
+|                   Navigation without Animation                    |                   Navigation with Animation                    |
+|:-----------------------------------------------------------------:|:--------------------------------------------------------------:|
+| <img src="examples/navigation_without_animation.gif" width="200"> | <img src="examples/navigation_with_animation.gif" width="200"> |
+|                  *Navigation without Animation.*                  |                  *Navigation with Animation.*                  |
+
 ---
 
 > [!IMPORTANT]  
