@@ -31,6 +31,17 @@ Compose. The project includes:
 
 ---
 
+# Navigation Example
+
+This example demonstrates the following navigation paths:
+
+- **Bottom Navigation**:
+    - 📱 -> **Screen A** & **Screen B**
+- **From Screen A**:  - ➡️ -> **Screen C**
+- **From Screen B**:  - ➡️ -> **Screen D**
+
+---
+
 # Examples
 
 ---
