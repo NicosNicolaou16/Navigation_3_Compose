@@ -20,7 +20,7 @@ fun ScreenDRoot() {
             modifier = Modifier
                 .fillMaxSize()
                 .background(
-                    color = MaterialTheme.colorScheme.error
+                    color = MaterialTheme.colorScheme.onError
                 )
                 .padding(paddingValues)
                 .wrapContentSize(Alignment.Center)

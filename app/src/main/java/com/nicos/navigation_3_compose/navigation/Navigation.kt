@@ -36,6 +36,7 @@ fun Navigation(
     navigationState: NavigationState,
     paddingValues: PaddingValues,
 ) {
+    // the rememberListDetailSceneStrategy is experimental
     val sceneStrategy = rememberListDetailSceneStrategy<NavKey>()
 
     NavDisplay(
