@@ -41,6 +41,8 @@ This example demonstrates the following navigation paths:
 
 ---
 
+# Article
+
 > [!IMPORTANT]  
 > Check my article for the setup :point_right: [ - Medium]() :point_left: <br />
 
