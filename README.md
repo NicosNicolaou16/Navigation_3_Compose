@@ -44,7 +44,7 @@ This example demonstrates the following navigation paths:
 # Article
 
 > [!IMPORTANT]  
-> Check my article for the setup :point_right: [ - Medium]() :point_left: <br />
+> Check my article for the setup :point_right: [Navigation 3 - The new navigation for Jetpack Compose - Medium]() :point_left: <br />
 
 ---
 
