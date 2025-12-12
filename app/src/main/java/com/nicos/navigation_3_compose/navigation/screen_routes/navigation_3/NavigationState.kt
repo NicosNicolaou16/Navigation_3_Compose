@@ -1,6 +1,5 @@
 package com.nicos.navigation_3_compose.navigation.screen_routes.navigation_3
 
-import androidx.compose.runtime.snapshots.SnapshotStateList
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
 
