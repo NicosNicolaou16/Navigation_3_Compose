@@ -31,6 +31,15 @@ This repository provides a step-by-step tutorial for the **Navigation 3** librar
 *   **Navigation:** [Navigation 3](https://developer.android.com/guide/navigation/navigation-3)
 *   **Language:** [Kotlin](https://kotlinlang.org)
 
+## 🗺️ Navigation Example
+
+This example demonstrates the following navigation paths:
+
+- **Bottom Navigation**:
+  - 📱 -> **Screen A** & **Screen B**
+- **From Screen A**:  - ➡️ -> **Screen C**
+- **From Screen B**:  - ➡️ -> **Screen D**
+
 ## 📸 Examples
 
 | Navigation without Animation | Navigation with Animation | Adaptive Navigation |
@@ -39,11 +48,11 @@ This repository provides a step-by-step tutorial for the **Navigation 3** librar
 
 ## 🔧 Versioning
 
-*   **Navigation 3 Version:** 1.0.0
-*   **Target SDK:** 36
-*   **Minimum SDK:** 29
-*   **Kotlin Version:** 2.2.21
-*   **Gradle Version:** 8.13.2
+*   **Navigation 3 Version:** **1.0.0**
+*   **Target SDK:** **36**
+*   **Minimum SDK:** **29**
+*   **Kotlin Version:** **2.2.21**
+*   **Gradle Version:** **8.13.2**
 
 ## 📚 References & Tutorials
 *   [YouTube Tutorial: Jetpack compose navigation - Transitions](https://youtu.be/6L6GfvlmKj8?si=QFvKUxKXNmpY2oY9)
