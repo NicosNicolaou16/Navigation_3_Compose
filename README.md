@@ -42,8 +42,8 @@ This example demonstrates the following navigation paths:
 
 ## 📸 Examples
 
-| Navigation without Animation | Navigation with Animation | Adaptive Navigation |
-|:---:|:---:|:---:|
+|                   Navigation without Animation                    |                   Navigation with Animation                    |                            Adaptive Navigation                            |
+|:-----------------------------------------------------------------:|:--------------------------------------------------------------:|:-------------------------------------------------------------------------:|
 | <img src="examples/navigation_without_animation.gif" width="200"> | <img src="examples/navigation_with_animation.gif" width="200"> | <img src="examples/navigation_supports_adaptive_screens.gif" width="300"> |
 
 ## 🔧 Versioning
