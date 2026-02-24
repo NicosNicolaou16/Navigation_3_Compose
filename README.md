@@ -11,7 +11,7 @@
 [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/@nicosnicolaou16)
 [![Google Developer Profile](https://img.shields.io/badge/Developer_Profile-blue?style=for-the-badge&label=Google)](https://g.dev/nicolaou_nicos)
 
-This repository provides a step-by-step tutorial for the **Navigation 3** library, a modern navigation solution designed specifically for **Jetpack Compose**. [11] Navigation 3 offers developers complete control over the navigation back stack, simplifying the process to be as straightforward as managing a list. [11]
+This repository provides a step-by-step tutorial for the **Navigation 3** library, a modern navigation solution designed specifically for **Jetpack Compose**. Navigation 3 offers developers complete control over the navigation back stack, simplifying the process to be as straightforward as managing a list.
 
 > [!IMPORTANT]  
 > For a detailed guide on the setup and implementation, check out my article on Medium:
@@ -22,8 +22,8 @@ This repository provides a step-by-step tutorial for the **Navigation 3** librar
 
 *   **Basic Setup:** Demonstrates the core setup for navigation state and the overall navigation system.
 *   **Bottom Navigation:** Shows integration with a Bottom Navigation bar for primary app destinations.
-*   **Animations:** Includes examples of screen transition animations with both global and per-screen configurations. [3]
-*   **Adaptive UI:** Supports adaptive navigation, allowing the UI to adjust to different screen sizes and layouts, such as for tablets and foldables. [8, 11]
+*   **Animations:** Includes examples of screen transition animations with both global and per-screen configurations.
+*   **Adaptive UI:** Supports adaptive navigation, allowing the UI to adjust to different screen sizes and layouts, such as for tablets and foldables.
 
 ## 🛠️ Tech Stack & Libraries
 
