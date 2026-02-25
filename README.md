@@ -58,3 +58,13 @@ This example demonstrates the following navigation paths:
 *   [YouTube Tutorial: Jetpack compose navigation - Transitions](https://youtu.be/6L6GfvlmKj8?si=QFvKUxKXNmpY2oY9)
 *   [Android Developers Blog: Jetpack Navigation 3 is Stable](https://android-developers.googleblog.com/2025/11/jetpack-navigation-3-is-stable.html)
 *   [Official Documentation: Navigation 3 Guide](https://developer.android.com/guide/navigation/navigation-3)
+
+## ⭐ Stargazers
+
+If you enjoy this project, please give it a star!
+Check out all the stargazers
+here: [Stargazers on GitHub](https://github.com/NicosNicolaou16/Navigation_3_Compose/stargazers)
+
+## 🙏 Support & Contributions
+
+This project is actively maintained. Feedback, bug reports, and feature requests are welcome! Please feel free to **open an issue** or submit a **pull request**.
