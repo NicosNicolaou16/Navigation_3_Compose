@@ -48,11 +48,11 @@ This example demonstrates the following navigation paths:
 
 ## 🔧 Versioning
 
-*   **Navigation 3 Version:** **1.0.1**
+*   **Navigation 3 Version:** **1.1.0**
 *   **Target SDK:** **36**
 *   **Minimum SDK:** **29**
-*   **Kotlin Version:** **2.3.10**
-*   **Gradle Version:** **9.0.1**
+*   **Kotlin Version:** **2.3.20**
+*   **Gradle Version:** **9.1.0**
 
 ## 📚 References & Tutorials
 *   [YouTube Tutorial: Jetpack compose navigation - Transitions](https://youtu.be/6L6GfvlmKj8?si=QFvKUxKXNmpY2oY9)
