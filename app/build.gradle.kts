@@ -9,7 +9,7 @@ plugins {
 android {
     namespace = "com.nicos.navigation_3_compose"
     compileSdk {
-        version = release(36)
+        version = release(37)
     }
 
     defaultConfig {
