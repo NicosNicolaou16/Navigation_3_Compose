@@ -49,7 +49,7 @@ This example demonstrates the following navigation paths:
 ## 🔧 Versioning
 
 *   **Navigation 3 Version:** **1.3.0**
-*   **Target SDK:** **36**
+*   **Target SDK:** **37**
 *   **Minimum SDK:** **29**
 *   **Kotlin Version:** **2.4.21**
 *   **AGP Version:** **9.4.1**
