@@ -8,6 +8,7 @@ plugins {
 
 android {
     namespace = "com.nicos.navigation_3_compose"
+    buildToolsVersion = "37.0.0"
     compileSdk {
         version = release(37)
     }

@@ -33,7 +33,8 @@ class MainActivity : ComponentActivity() {
                     bottomBar = {
                         MainBottomNavigationView(
                             navigator = navigator,
-                            currentRoute = navigator.state.stacksInUse.lastOrNull().toString(),
+                            currentTopLevelRoute = navigator.state.stacksInUse.lastOrNull()
+                                ?: ScreenA
                         )
                     }) { innerPadding ->
                     Navigation(
