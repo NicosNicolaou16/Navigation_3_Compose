@@ -53,6 +53,7 @@ This example demonstrates the following navigation paths:
 *   **Minimum SDK:** **29**
 *   **Kotlin Version:** **2.4.21**
 *   **AGP Version:** **9.4.1**
+*   **Gradle Version:** **9.8.2**
 
 ## 📚 References & Tutorials
 *   [YouTube Tutorial: Jetpack compose navigation - Transitions](https://youtu.be/6L6GfvlmKj8?si=QFvKUxKXNmpY2oY9)
