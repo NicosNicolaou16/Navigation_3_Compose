@@ -51,7 +51,7 @@ This example demonstrates the following navigation paths:
 *   **Navigation 3 Version:** **1.3.0**
 *   **Target SDK:** **36**
 *   **Minimum SDK:** **29**
-*   **Kotlin Version:** **2.3.20**
+*   **Kotlin Version:** **2.4.21**
 *   **Gradle Version:** **9.1.0**
 
 ## 📚 References & Tutorials
