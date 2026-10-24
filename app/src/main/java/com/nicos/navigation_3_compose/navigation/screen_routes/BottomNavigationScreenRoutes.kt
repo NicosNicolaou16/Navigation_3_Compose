@@ -1,8 +1,14 @@
 package com.nicos.navigation_3_compose.navigation.screen_routes
 
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
 import com.nicos.navigation_3_compose.R
 
-data class TopLevelRoute<T : Any>(val name: Int, val route: T, val icon: Int) {
+data class TopLevelRoute<T : Any>(
+    @StringRes val name: Int,
+    val route: T,
+    @DrawableRes val icon: Int
+) {
 
     companion object {
         internal val screenARoot = TopLevelRoute(
